@@ -1,0 +1,24 @@
+    /*
+    val url0 = "jdbc:mysql://192.168.11.25:3306/dict"
+    val url = "jdbc:mysql://192.168.11.25:3306/koalaplatform"
+    val prop = new java.util.Properties
+    prop.setProperty("user", "root")
+    prop.setProperty("password", "ty123456")
+    val dict_calendar = sqlContext.read.jdbc(url0, "dict_calendar",prop)
+    dict_calendar.registerTempTable("dict_calendar")
+    val pl_userinfo = sqlContext.read.jdbc(url, "pl_userinfo",prop)
+    val pl_organization = sqlContext.read.jdbc(url, "pl_organization",prop)
+    val pl_openaccount = sqlContext.read.jdbc(url, "pl_openaccount",prop)
+    val t_useractionlog = sqlContext.read.jdbc(url, "t_useractionlog",prop)
+    val pl_post = sqlContext.read.jdbc(url, "pl_post",prop)
+    val pl_user_role_rel = sqlContext.read.jdbc(url, "pl_user_role_rel",prop)
+    val pl_roles = sqlContext.read.jdbc(url, "pl_roles",prop)
+    pl_userinfo.registerTempTable("pl_userinfo")
+    pl_organization.registerTempTable("pl_organization")
+    pl_openaccount.registerTempTable("pl_openaccount")
+    t_useractionlog.registerTempTable("t_useractionlog")
+    pl_post.registerTempTable("pl_post")
+    pl_user_role_rel.registerTempTable("pl_user_role_rel")
+    pl_roles.registerTempTable("pl_roles")
+    */
+

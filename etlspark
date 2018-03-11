@@ -1,0 +1,117 @@
+-- dim_custom
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dim_custom   /data/tydata/out/artifacts/dim_custom_jar/tydata.jar
+
+-- dim_organization
+
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dim_organization   /data/tydata/out/artifacts/dim_organization_jar/tydata.jar
+
+-- dim_post
+
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dim_post   /data/tydata/out/artifacts/dim_post_jar/tydata.jar
+
+--  dim_role
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dim_role   /data/tydata/out/artifacts/dim_role_jar/tydata.jar
+
+-- dim_user
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dim_user   /data/tydata/out/artifacts/dim_user_jar/tydata.jar
+
+-- dim_host
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dim_host   /data/tydata/out/artifacts/dim_host_jar/tydata.jar
+
+
+-- dim_sector
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dim_sector   /data/tydata/out/artifacts/dim_sector_jar/tydata.jar
+
+
+-- dim_alarmtype
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dim_alarmtype   /data/tydata/out/artifacts/dim_alarmtype_jar/tydata.jar
+
+
+
+-- dim_servicebranchnet
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim_servicebranchnet   /data/tydata/out/artifacts/dim_servicebranchnet_jar/tydata.jar
+
+-- dim_servicecompanyorg
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim_servicecompanyorg   /data/tydata/out/artifacts/dim_servicecompanyorg_jar/tydata.jar
+
+--dim_servicecompany
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim_servicecompany   /data/tydata/out/artifacts/dim_servicecompany_jar/tydata.jar
+
+
+-- dim_serviceuser
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim_serviceuser     /data/tydata/out/artifacts/dim_serviceuser_jar/tydata.jar
+
+-- dim_servicerole
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim_servicerole     /data/tydata/out/artifacts/dim_servicerole_jar/tydata.jar
+
+
+-- fact_inspect_imagecomment
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datawarehouse.fact_inspect_imagecomment   /data/tydata/out/artifacts/fact_inspect_imagecomment_jar/tydata.jar
+
+-- fact_flowform
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datawarehouse.flow   /data/tydata/out/artifacts/flow_jar/tydata.jar
+
+
+-- fact_alarm
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.fact_alarm   /data/tydata/out/artifacts/fact_alarm_jar/tydata.jar
+
+
+
+-- fact_alarmhandle
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.fact_alarmhandle   /data/tydata/out/artifacts/fact_alarmhandle_jar/tydata.jar
+
+
+-- fact_deploywithdraw
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.fact_deploywithdraw   /data/tydata/out/artifacts/fact_deploywithdraw_jar/tydata.jar
+
+--  fact_serviceinspect
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.fact_serviceinspect   /data/tydata/out/artifacts/fact_serviceinspect_jar/tydata.jar
+
+
+--  fact_useraction
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.fact_useraction   /data/tydata/out/artifacts/fact_useraction_jar/tydata.jar
+
+
+
+-- fact_repairmaintenance
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.fact_repairmaintenance   /data/tydata/out/artifacts/fact_repairmaintenance_jar/tydata.jar
+
+
+
+-- fact_inspect
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datawarehouse.fact_inspect   /data/tydata/out/artifacts/fact_inspect_jar/tydata.jar
+
+
+
+
+-- dim_alarmbranch
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim_alarmbranch   /data/tydata/out/artifacts/dim_alarmbranch_jar/tydata.jar
+
+
+-- dim_alarmsecondnet
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim_alarmsecondnet   /data/tydata/out/artifacts/dim_alarmsecondnet_jar/tydata.jar
+
+
+-- dim_alarmbranchnet
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim_alarmbranchnet   /data/tydata/out/artifacts/dim_alarmbranchnet_jar/tydata.jar
+
+
+
+
+-- ´ý¶¨
+
+-- baseinfo
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.baseinfo   /data/tydata/out/artifacts/baseinfo_jar/tydata.jar
+
+-- dict
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datawarehouse.dict  /data/tydata/out/artifacts/dict_jar/tydata.jar
+
+-- dim
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.dim   /data/tydata/out/artifacts/dim_jar/tydata.jar
+
+
+
+
+--  fact_companyorg
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g    --class datawarehouse.fact_companyorg   /data/tydata/out/artifacts/fact_companyorg_jar/tydata.jar
+

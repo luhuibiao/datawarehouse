@@ -1,0 +1,14 @@
+ //df5.save("org.apache.phoenix.spark", SaveMode.Overwrite,
+          //Map("table" -> "operation.onlinerate", "zkUrl" -> "192.168.11.23:60001"))
+
+//保存数据到 hbase
+DF.write.mode(SaveMode.Overwrite)
+  .options(Map("table" -> "USER_OVERVIEW", "zkUrl" -> conf.getString("Hbase.url")))
+   .format("org.apache.phoenix.spark").save()
+
+
+
+//加载hbase 中的表 到 DataFrame
+sqlContext.read.options(Map("table" -> "USER_OVERVIEW", "zkUrl" -> conf.getString("Hbase.url")))
+ .format("org.apache.phoenix.spark").load()
+ .registerTempTable("USER_OVERVIEW")

@@ -1,0 +1,9 @@
+  import org.apache.spark.sql.functions._
+   // val uuid_ =(str: String) => {
+     // str
+    //}
+    //
+    sqlContext.udf.register("uuid",uuid_)
+     uuid(b.PLID),
+
+
